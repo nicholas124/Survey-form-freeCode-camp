@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title"> NM</h1>
+            <h2 id="title">Survey Form for free code Camp</h2>
+            <p id="description" class="description"> Learned from freeCode camp</p>
+
+        </header>
+
+        <form id="survey-form">
+            <!--Name -->
+            <div class="form-group">
+                <label id="name-label" for="name">
+                    Name
+                </label>
+
+                <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" required="">
+
+            </div>
+
+            <!-- Age -->
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+
+                <input class="form-control" type="number" name="age" id="number" min="10" max="99" placeholder="Age (Optional)" required="">
+
+            </div>
+            <!--Email div-->
+            <div class="form-group">
+                <label id="email-label" for="email" > Email</label>
+                <input id="email" type="email" class="form-control" name="email" placeholder="Enter Your Email Address " required="">
+            </div>
+
+            
+
+            <div class="form-group jumbotron text-white" id="jumbotron" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(img/cook-366875.jpg);">
+                
+                <label class="container">
+                    <p><h3>Please answer the following questions:</h3></p>
+
+                    <!-- dropdown -->
+
+            <div class="form-group">
+                <p>Which best describes your experiance at the Contoso restaurant?</p>
+                <select class="form-control" name="experiance" id="dropdown">
+                    <option disabled="" selected="" value="">Please make a selection</option>
+                    <option value="exciting">Exciting</option>
+                    <option value="experiance">Had the greatest time of my life</option>
+                    <option value="food">Food was bad (under or over cooked)</option>
+                    <option value="service">Great Service</option>
+                    <option value="surver">My waiter/waitress was annoying</option>
+                    <option value="foodWasgood"> Food was so good I bit my tongue</option>
+                </select>
+            </div>
+                    <br>
+                    <p>Is the food at Contoso foods always fresh?</p>
+                    <!-- radio buttons-->
+                    <div class="row">
+                        <p class="col">Yes <input class="input-radio" name="user-input" value="Yes" type="radio" checked> </p>
+
+                    </div>
+                    
+                    <div class="row">
+                        <p class="col">No  <input class="input-radio" name="user-input" value="Yes" type="radio" checked> </p>
+
+                    </div>                    
+                
+                </label>
+                
+                <label class="container">
+                    <p>Where you treated professionally by the Contoso staff throughout your visit?</p>
+                    <div class="row">
+                        <p class="col">Yes  <input class="input-radio" name="user-input" value="Yes" type="radio" checked> </p>
+
+                    </div>
+
+                    <div class="row">
+                        <p class="col">No  <input class="input-radio" name="user-input" value="Yes" type="radio" checked> </p>
+
+                    </div>
+
+                </label>
+                
+                <label class="container">
+                    <p>Was this coding exercise challenging?
+
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <div class="row">
+                        <p class="col">Yes  <input class="input-radio" name="user-input" value="Yes" type="radio" checked> </p>
+
+                    </div>
+
+                    <div class="row">
+                        <p class="col">No  <input class="input-radio" name="user-input" value="Yes" type="radio" checked> </p>
+
+                    </div>
+
+                </label>
+
+                <!-- checkboxes-->
+
+                <div class="container">
+
+                    <div class="form-group">
+                        <p>What was your most memorable experiance here at The Contoso Resaurant</p>
+                        <label  for="checkbox">
+                            <input type="checkbox" class="input-checkbox" name="prefer" value="The entertainment" >
+                            The entertainment (Dance and Music)
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label  for="checkbox">
+                            <input type="checkbox" class="input-checkbox" name="prefer" value="Food" >
+                            The food was amazing
+                        </label>
+                    </div>
+                    <div>
+                        <label  for="checkbox">
+                            <input type="checkbox" class="input-checkbox" name="prefer" value="Aakeem" >
+                            Aakeem is a great guy! 😀
+                        </label>
+                    </div>
+
+                </div>   
+                    
+                <!--Suggestion Box-->
+                    
+                <br>
+                <div class="form-group">
+                    <p>Would like to leave a comment or suggestion?</p>
+                    <textarea class="input-comment" name="comments" id="comments" cols="30" rows="10" placeholder="Enter Your Comment Here"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button id="submit" class="subit-button" type="submit" >Submit</button>
+    
+                </div>
+            </div>
+                
+            
+
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
